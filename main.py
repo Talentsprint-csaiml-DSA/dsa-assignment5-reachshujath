@@ -12,8 +12,8 @@ def min_coins(coins, target_amount):
             # Include coin if the balance is not negative
             if remainder >= 0:
                 coin_tree[amount] = min(coin_tree[amount], 1 + coin_tree[remainder])
-            print("Current State:")
-            print(coin_tree)
+            # print("Current State:")
+            # print(coin_tree)
 
     return coin_tree[target_amount]
                 
